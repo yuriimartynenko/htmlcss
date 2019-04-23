@@ -1,0 +1,21 @@
+body {
+
+    margin: auto;
+}
+
+h1, h2, h3, p, div, nav, section, main {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: url(../img/background.jpg)  no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+header #header {
+    max-width: 800px;
+    margin: 0 auto;
+
+
+}
