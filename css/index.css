@@ -1,21 +1,342 @@
-body {
-
-    margin: auto;
-}
-
-h1, h2, h3, p, div, nav, section, main {
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway');
+html, body, h1, h2, h3, p, div, nav, section, main, ul {
     margin: 0;
     padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    scroll-behavior: smooth;
 }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+/*START HEADER*/
 header{
     background: url(../img/background.jpg)  no-repeat;
     background-size: cover;
     background-position: center;
     height: 650px;
 }
-header #header {
-    max-width: 800px;
-    margin: 0 auto;
-
+header .container nav .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
 
 }
+header .container nav .logo a {
+    color: white;
+    text-decoration: none;
+}
+
+header .container nav ul {
+    display: none;
+
+}
+header .container nav ul li > a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+}
+@media (min-width: 530px) {
+    header .container nav {
+        display: flex;
+        padding: 17px 18px;
+        background-color: #0000005e;
+        /*position: fixed;
+        width: 900px;*/
+} 
+}
+@media (min-width: 530px) {
+    header .container nav ul {
+        flex: 1;
+        padding: 0;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+}
+}
+header .container nav ul li {
+    padding: 0 10px;
+}
+#nav-toggle {
+    background-color: #2d7c9a;
+    border: 1px solid white;
+    border-radius: 4px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width:530px){
+    #nav-toggle {
+    display: none;
+}
+}
+
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 18px;
+    background-color: #0000005e;
+}
+
+#text_header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 650px;
+    padding: 0px 18px;
+}
+a.bgallery {
+    color: white;
+    text-decoration: none;
+    background: #d4d4d429;
+    width: 111px;
+    height: 43px;
+    border-radius: 28px;
+    border: 1px solid #9c9c9c;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.bgallery:hover {
+    color: #e8e7e7;
+    background: #10101029;
+    border: 1px solid #9c9c9c;
+    transition-duration: 3s;
+}
+
+@media (min-width:430px){
+    .button {
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+@media (min-width:430px){
+    .text_info {
+    position: absolute;
+    color: white;
+    }
+}
+.text_info {
+    color: white;
+}
+/*END HEADER*/
+
+/*START MAIN*/
+section {
+    margin: 50px 0;
+    padding: 0 19px;
+}
+
+@media (min-width: 260px){
+hr {
+    width: 222px;
+    border: 1px solid #c7c7c7;
+}
+}
+
+h3 {
+    text-align: center;
+    color: #484747;
+    text-transform: uppercase;
+}
+
+section#gallery {
+    background: aliceblue;
+    background-image: radial-gradient(#8db4fd, #b9deff, #e0f2ff);
+    padding: 18px 19px 18px;
+}
+.myphoto{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+@media (min-width: 700px){
+.aboutme {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+#about .aboutme p {
+    padding: 25px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.photos {
+    display: grid;
+    grid-gap: 2px;
+}
+
+@media (min-width: 400px){
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+}
+}
+
+@media (min-width: 660px){
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+}
+
+@media (min-width: 770px){
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+}
+
+@media (min-width: 530px) {
+    #gallery .container .nav {
+        display: flex;
+        padding: 3px 18px;
+        background-color: #0000005e;
+} 
+}
+
+#gallery .container .nav ul li > a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #23415f7d;
+    padding: 8px 18px;
+}
+
+#gallery .container .nav ul li > a:hover {
+    background-color: #101c277d;
+    transition-duration: 1s;
+}
+
+#gallery .container .nav {
+        background-color: #0000005e;
+} 
+
+#gallery .container .nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+@media (min-width: 530px) {
+    #gallery .container .nav ul {
+        flex: 1;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+}
+}
+
+#gallery .container .nav ul li {
+    padding: 11px;
+}
+.photos div img:hover {
+    cursor: zoom-in;
+    opacity: 0.7;
+    transition-duration: 1s;
+}
+
+.readmore {
+    text-align: center;
+    padding: 13px 0 0;
+}
+.readmore a {
+    color: black;
+}
+@media (min-width: 600px) {
+#contact .contactme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+}
+@media (min-width: 600px) {
+#contact .contactme ul {
+    list-style: none;
+}
+}
+@media (min-width: 600px) {
+#contact .contactme ul li {
+    padding: 10px 0;
+    color: #272727;
+}
+}
+.contactme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.contactme ul {
+    list-style: none;
+}
+#contact .contactme ul li {
+    padding: 10px 0;
+    color: #272727;
+}
+form.formsend {
+    display: flex;
+    flex-direction: column;
+}
+
+.formsend input {
+    border: 1px solid #dadada;
+    width: 200px;
+    outline: 0;
+    padding: 5px;
+}
+
+textarea#message {
+    padding: 5px;
+    outline: 0;
+    border: 1px solid #dadada;
+    max-width: 200px;
+    height: 90px;
+    max-height: 180px;
+}
+input[type="submit"] {
+    border: 1px solid;
+    background-color: #2f962f;
+    border-radius: 23px;
+    color: white;
+    width: 87px;
+    height: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #25772b;
+    transition-duration: 1s;
+}
+/*END MAIN*/
+
+/*START FOOTER*/
+footer {
+    background: linear-gradient(#ffffff, #c5c5c5);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #292929;
+}
+/*END FOOTER*/

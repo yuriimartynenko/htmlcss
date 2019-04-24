@@ -6,112 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal portfolio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div id="header">
-        <div id="logo">
-           <span><a href="index.html">Logotype</a></span> 
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#gallery">My Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="text_header">
-            <h2>Personal Portfolio</h2>
-            <small>Welcome  to my personal website!</small>
-            <a href="gallery.html" class="bgallery">My Gallery</a>
-        </div>
+        <div class="container">
+            <nav>
+                <span class="logo"><a href="index.html">Logotype</a></span>
+                <button type="button" id="nav-toggle"></button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#gallery">My Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="text_header">
+                <div class="text_info">
+                    <h1>Personal Portfolio</h1>
+                    <small>Welcome  to my personal website!</small>
+                </div>
+                <span class="button">
+                    <a href="gallery.html" class="bgallery">My Gallery</a>
+                </span>
+            </div>
         </div>
     </header>
     <main>
-        <section id="about">
-            <h3>About me</h3>
-            <hr>
-            <img src="img/myphoto.png" alt="my photo">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-            quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-            dolor in hendrerit in vulputate velit esse molestie consequat,
-            vel illum dolore eu feugiat nulla facilisis at vero eros et
-            accumsan et iusto odio dignissim qui blandit praesent luptatum
-            zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p>
-        </section>
+        <div class="container">
+            <section id="about">
+                <h3>About me</h3>
+                <hr>
+                <div class="aboutme">
+                    <img src="img/myphoto.png" alt="my photo" class="myphoto">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                    ut aliquip ex ea commodo consequat.Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat,
+                    vel illum dolore eu feugiat nulla facilisis at vero eros et
+                    accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+            </section>
+        </div>
+            
         <section id="gallery">
-            <h3>My Gallery</h3>
-            <hr>
-            <div class="photos">
-                <ul>
-                    <li><a href="#all">All</a></li>
-                    <li><a href="#nature">Nature</a></li>
-                    <li><a href="#wildfife">Wildfife</a></li>
-                    <li><a href="#citylife">Citylife</a></li>
-                </ul>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+            <div class="container">
+                <h3>My Gallery</h3>
+                <hr>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#all">All</a></li>
+                        <li><a href="#nature">Nature</a></li>
+                        <li><a href="#wildfife">Wildfife</a></li>
+                        <li><a href="#citylife">Citylife</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                <div class="photos">
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Wildfife"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Wildfife"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Citylife"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    </div>
                 </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Wildfife"></a>
+                <div class="readmore">
+                    <a href="gallery.html">Read more</a>
                 </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Wildfife"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Citylife"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="img/photo.jpg" alt="Citylife"></a>
-                </div>
-                <a href="gallery.html">Read more</a>
             </div>
         </section>
-        <section id="contact">
-            <h3>Contact me</h3>
-            <hr>
-             <ul>
-        		<li>Address<br>Ukraine, Lviv, Lukasha street, 4</li>
-        		<li>Call us<br>+123456789</li>
-        		<li>Email us<br><a href="mailto:ymartinenko4@gmail.com">ymartinenko4@gmail.com</a></li>
-    	    </ul>
-    	    <ul>
-    	        <li>Teleram</li>
-    	        <li>LinkedIn</li>
-    	        <li>FaceBook</li>
-    	    </ul>
-            <form action="https://formspree.io/ymartinenko4@gmail.com" method="POST">
-                <label>Name:
-        	        <input type="text" placeholder="Your Name"><br>
-        	    </label>
-        	    <label>Your E-mail:
-        		    <input type="email" placeholder="Your E-mail"><br>
-        		</label>
-        		<label>Your Message:
-        		    <textarea placeholder="Message"></textarea><br>
-        		</label>
-                <input type="submit" value="Send">
-        	</form>
-        	<div>
-	    </div>
-        </section>
+        
+        <div class="container">
+            <section id="contact">
+                <h3>Contact me</h3>
+                <hr>
+                <div class="contactme">
+                    <ul>
+                		<li><i class="fas fa-map-marked"></i> <b>Address</b><br>Ukraine, Lviv, Lukasha street, 4</li>
+                		<li><i class="fas fa-phone"></i> <b>Call us</b><br>+123456789</li>
+                		<li><i class="fas fa-at"></i> <b>Email us</b><br><a href="mailto:ymartinenko4@gmail.com">ymartinenko4@gmail.com</a></li>
+            	     	<li><i class="fab fa-telegram"> Telegram</i></li>
+                        <li><i class="fab fa-facebook"> Facebook</i></li>
+            	        <li><i class="fab fa-linkedin"> LinkedIn</i></li>
+            	    </ul>
+                    <form action="https://formspree.io/ymartinenko4@gmail.com" method="POST" class="formsend">
+                        <label for="name">Your Name:</label>
+                	    <input type="text" id="name" placeholder="Name"><br>
+                	    <label for="email">Your E-mail:</label>
+                		<input type="email" id="email" placeholder="E-mail"><br>
+                		<label for="message">Your Message:</label>
+                		<textarea placeholder="Message" id="message"></textarea><br>
+                        <input type="submit" value="Send">
+                	</form>
+            	</div>
+            </section>
+        </div>
     </main>
     <footer>
 	    <span>© 2019 Yurii Martynenko</span>
