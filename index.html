@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <header class="parallax">
         <div class="container">
             <nav>
-                <span class="logo"><a href="index.html">Logotype</a></span>
-                <button type="button" id="nav-toggle"></button>
+                <span class="logo"><a href="index.html"><i class="fas fa-camera-retro"></i> Logotype</a></span>
+                <button type="button" id="nav-toggle"><i class="fas fa-bars"></i></button>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#gallery">My Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-address-card"></i> About me</a></li>
+                    <li><a href="#gallery"><i class="fas fa-image"></i> My Gallery</a></li>
+                    <li><a href="#contact"><i class="fas fa-address-book"></i> Contact</a></li>
                 </ul>
             </nav>
             <div id="text_header">
@@ -27,7 +28,7 @@
                     <small>Welcome  to my personal website!</small>
                 </div>
                 <span class="button">
-                    <a href="gallery.html" class="bgallery">My Gallery</a>
+                    <a href="#gallery" class="bgallery">My Gallery</a>
                 </span>
             </div>
         </div>
@@ -39,91 +40,125 @@
                 <hr>
                 <div class="aboutme">
                     <img src="img/myphoto.png" alt="my photo" class="myphoto">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat.Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat.Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                 </div>
             </section>
         </div>
-            
         <section id="gallery">
             <div class="container">
                 <h3>My Gallery</h3>
                 <hr>
                 <div class="nav">
                     <ul>
-                        <li><a href="#all">All</a></li>
-                        <li><a href="#nature">Nature</a></li>
-                        <li><a href="#wildfife">Wildfife</a></li>
-                        <li><a href="#citylife">Citylife</a></li>
+                        <li class="all-list"><a href="#all">All</a></li>
+                        <li class="nature-list"><a href="#nature">Nature</a></li>
+                        <li class="wildfife-list"><a href="#wildfife">Wildlife</a></li>
+                        <li class="citylife-list"><a href="#citylife">Citylife</a></li>
+                        <li class="other-list"><a href="#other">Other</a></li>
                     </ul>
                 </div>
-                <div class="photos">
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                <div class="all-photos">
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-fog.jpg" alt="Nature"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-forest.jpg" alt="Nature"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Wildfife"></a>
+                    <div class="wildfife">
+                        <a href="#"><img src="img/wildfife-deer.jpg" alt="Wildfife"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-lake.jpg" alt="Nature"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Wildfife"></a>
+                    <div class="wildfife">
+                        <a href="#"><img src="img/wildfife-birds.jpg" alt="Wildfife"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-levanda.jpg" alt="Nature"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Citylife"></a>
+                    <div class="citylife">
+                        <a href="#"><img src="img/citylife-london.jpg" alt="Citylife"></a>
                     </div>
-                    <div>
-                        <a href="#"><img src="img/photo.jpg" alt="Nature"></a>
+                    <div class="citylife">
+                        <a href="#"><img src="img/citylife-paris.jpg" alt="Citylife"></a>
                     </div>
                 </div>
-                <div class="readmore">
-                    <a href="gallery.html">Read more</a>
+                <div class="nature-photos">
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-fog.jpg" alt="Nature"></a>
+                    </div>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-forest.jpg" alt="Nature"></a>
+                    </div>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-lake.jpg" alt="Nature"></a>
+                    </div>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-levanda.jpg" alt="Nature"></a>
+                    </div>
+                    <div class="nature">
+                        <a href="#"><img src="img/nature-waterfull.jpg" alt="Citylife"></a>
+                    </div>
                 </div>
+                <div class="wildfife-photos">
+                    <div class="wildfife">
+                        <a href="#"><img src="img/wildfife-birds.jpg" alt="Wildfife"></a>
+                    </div>
+                    <div class="wildfife">
+                        <a href="#"><img src="img/wildfife-deer.jpg" alt="Wildfife"></a>
+                    </div>
+                </div>
+                <div class="citylife-photos">
+                    <div class="citylife">
+                        <a href="#"><img src="img/citylife-london.jpg" alt="Citylife"></a>
+                    </div>
+                    <div class="citylife">
+                        <a href="#"><img src="img/citylife-paris.jpg" alt="Citylife"></a>
+                    </div>
+                </div>
+                <div class="nav search-submit">
+                    <form id="search-form" action="#">
+                        <input id="search-keyword" type="search" placeholder="Enter a search phrase to search" required="">
+                        <input id="submit-btn" type="submit" value="Search">
+                    </form>
+                </div>
+                <div class="other-photos"></div>
             </div>
         </section>
-        
         <div class="container">
             <section id="contact">
                 <h3>Contact me</h3>
                 <hr>
                 <div class="contactme">
                     <ul>
-                		<li><i class="fas fa-map-marked"></i> <b>Address</b><br>Ukraine, Lviv, Lukasha street, 4</li>
-                		<li><i class="fas fa-phone"></i> <b>Call us</b><br>+123456789</li>
-                		<li><i class="fas fa-at"></i> <b>Email us</b><br><a href="mailto:ymartinenko4@gmail.com">ymartinenko4@gmail.com</a></li>
-            	     	<li><i class="fab fa-telegram"> Telegram</i></li>
+                        <li><i class="fas fa-map-marked"></i> <b>Address</b><br>Ukraine, Lviv, Lukasha street, 4</li>
+                        <li><i class="fas fa-phone"></i> <b>Call us</b><br>+123456789</li>
+                        <li><i class="fas fa-at"></i> <b>Email us</b><br><a href="mailto:ymartinenko4@gmail.com">ymartinenko4@gmail.com</a></li>
+                        <li><i class="fab fa-telegram"> Telegram</i></li>
                         <li><i class="fab fa-facebook"> Facebook</i></li>
-            	        <li><i class="fab fa-linkedin"> LinkedIn</i></li>
-            	    </ul>
+                        <li><i class="fab fa-linkedin"> LinkedIn</i></li>
+                    </ul>
                     <form action="https://formspree.io/ymartinenko4@gmail.com" method="POST" class="formsend">
                         <label for="name">Your Name:</label>
-                	    <input type="text" id="name" placeholder="Name"><br>
-                	    <label for="email">Your E-mail:</label>
-                		<input type="email" id="email" placeholder="E-mail"><br>
-                		<label for="message">Your Message:</label>
-                		<textarea placeholder="Message" id="message"></textarea><br>
+                        <input type="text" id="name" placeholder="Name"><br>
+                        <label for="email">Your E-mail:</label>
+                        <input type="email" id="email" placeholder="E-mail"><br>
+                        <label for="message">Your Message:</label>
+                        <textarea placeholder="Message" id="message"></textarea><br>
                         <input type="submit" value="Send">
-                	</form>
-            	</div>
+                    </form>
+                </div>
             </section>
         </div>
     </main>
     <footer>
-	    <span>© 2019 Yurii Martynenko</span>
+        <span>© 2019 Yurii Martynenko</span>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/parallax.jquery.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
