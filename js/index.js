@@ -3,6 +3,10 @@ $(window).scroll(function() {
     parallax.parallax()
 })
 
+$("#nav-toggle").click(function(){
+    $(".nav-menu").toggle(300);
+});
+
 $('.all-photos').addClass("photos").show();
 $('.nature-photos').hide();
 $('.wildfife-photos').hide();
@@ -65,7 +69,7 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
     responseContainer.innerHTML = '';
     searchedForText = searchField.value;
-    fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchedForText}&client_id=${appID}`)
+    fetch(`https://api.unsplash.com/search/photos?page=2&query=${searchedForText}&client_id=${appID}`)
         .then(response => response.json())
         .then(addImage)
         .catch(function(err) {
@@ -74,10 +78,33 @@ form.addEventListener('submit', function(e) {
 
     function addImage(data) {
         for (let image = 0; image < 8; image++) {
-            responseContainer.insertAdjacentHTML('beforeend', `<div class="${searchedForText}">
-                <a href="${data.results[image].urls.regular}"><img src="${data.results[image].urls.regular}" alt="${searchedForText}"></a>
-            </div>`);
-        }
+            responseContainer.insertAdjacentHTML('beforeend',
+            `<div class="other_photos">
+                <a href="#other"><img class="image" src="${data.results[image].urls.regular}" alt="${data.results[image].alt_description}"></a>
+            </div>`
+            );
 
+        }
+        $(".image").click(function() {
+            let img = $(this);
+            let src = img.attr('src');
+            let alt = img.attr('alt');
+            $("body").append(
+            `<div class="popup">
+                <div class="popupopen">
+                    <div class="popup_bg"></div>
+                    <img src="${src}" class="popup_img">
+                </div>
+                <div class="alt_modal">Description: "${alt}"</div>
+            </div>`);
+            $(".popupopen").fadeIn(800);
+            $(".popup_bg").click(function() {
+                $(".popup").fadeOut(800);
+                setTimeout(function() {
+                    $(".popup").remove();
+                }, 800);
+            });
+        });
     }
+
 });

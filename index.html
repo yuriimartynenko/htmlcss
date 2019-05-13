@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
+<body >
     <header class="parallax">
         <div class="container">
             <nav>
                 <span class="logo"><a href="index.html"><i class="fas fa-camera-retro"></i> Logotype</a></span>
                 <button type="button" id="nav-toggle"><i class="fas fa-bars"></i></button>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#about"><i class="fas fa-address-card"></i> About me</a></li>
                     <li><a href="#gallery"><i class="fas fa-image"></i> My Gallery</a></li>
@@ -61,61 +61,61 @@
                 </div>
                 <div class="all-photos">
                     <div class="nature">
-                        <a href="#"><img src="img/nature-fog.jpg" alt="Nature"></a>
+                        <a href="#openPhoto"><img class="image" src="img/nature-fog.jpg" alt="Nature"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-forest.jpg" alt="Nature"></a>
+                        <a href="#nature"><img class="image" src="img/nature-forest.jpg" alt="Nature"></a>
                     </div>
                     <div class="wildfife">
-                        <a href="#"><img src="img/wildfife-deer.jpg" alt="Wildfife"></a>
+                        <a href="#"><img class="image" src="img/wildfife-deer.jpg" alt="Wildfife"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-lake.jpg" alt="Nature"></a>
+                        <a href="#"><img class="image" src="img/nature-lake.jpg" alt="Nature"></a>
                     </div>
                     <div class="wildfife">
-                        <a href="#"><img src="img/wildfife-birds.jpg" alt="Wildfife"></a>
+                        <a href="#"><img class="image" src="img/wildfife-birds.jpg" alt="Wildfife"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-levanda.jpg" alt="Nature"></a>
+                        <a href="#"><img class="image" src="img/nature-levanda.jpg" alt="Nature"></a>
                     </div>
                     <div class="citylife">
-                        <a href="#"><img src="img/citylife-london.jpg" alt="Citylife"></a>
+                        <a href="#"><img class="image" src="img/citylife-london.jpg" alt="Citylife"></a>
                     </div>
                     <div class="citylife">
-                        <a href="#"><img src="img/citylife-paris.jpg" alt="Citylife"></a>
+                        <a href="#"><img class="image" src="img/citylife-paris.jpg" alt="Citylife"></a>
                     </div>
                 </div>
                 <div class="nature-photos">
                     <div class="nature">
-                        <a href="#"><img src="img/nature-fog.jpg" alt="Nature"></a>
+                        <a href="#"><img class="image" src="img/nature-fog.jpg" alt="Nature"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-forest.jpg" alt="Nature"></a>
+                        <a href="#"><img class="image" src="img/nature-forest.jpg" alt="Nature"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-lake.jpg" alt="Nature"></a>
+                        <a href="#"><img class="image" src="img/nature-lake.jpg" alt="Nature"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-levanda.jpg" alt="Nature"></a>
+                        <a href="#"><img class="image" src="img/nature-levanda.jpg" alt="Nature"></a>
                     </div>
                     <div class="nature">
-                        <a href="#"><img src="img/nature-waterfull.jpg" alt="Citylife"></a>
+                        <a href="#"><img class="image" src="img/nature-waterfull.jpg" alt="Citylife"></a>
                     </div>
                 </div>
                 <div class="wildfife-photos">
                     <div class="wildfife">
-                        <a href="#"><img src="img/wildfife-birds.jpg" alt="Wildfife"></a>
+                        <a href="#"><img class="image" src="img/wildfife-birds.jpg" alt="Wildfife"></a>
                     </div>
                     <div class="wildfife">
-                        <a href="#"><img src="img/wildfife-deer.jpg" alt="Wildfife"></a>
+                        <a href="#"><img class="image" src="img/wildfife-deer.jpg" alt="Wildfife"></a>
                     </div>
                 </div>
                 <div class="citylife-photos">
                     <div class="citylife">
-                        <a href="#"><img src="img/citylife-london.jpg" alt="Citylife"></a>
+                        <a href="#"><img class="image" src="img/citylife-london.jpg" alt="Citylife"></a>
                     </div>
                     <div class="citylife">
-                        <a href="#"><img src="img/citylife-paris.jpg" alt="Citylife"></a>
+                        <a href="#" id="openPhoto"><img class="image" src="img/citylife-paris.jpg" alt="Citylife"></a>
                     </div>
                 </div>
                 <div class="nav search-submit">
@@ -124,7 +124,8 @@
                         <input id="submit-btn" type="submit" value="Search">
                     </form>
                 </div>
-                <div class="other-photos"></div>
+                <div class="other-photos">
+                </div>
             </div>
         </section>
         <div class="container">
@@ -160,5 +161,4 @@
     <script src="js/parallax.jquery.js"></script>
     <script src="js/index.js"></script>
 </body>
-
 </html>
