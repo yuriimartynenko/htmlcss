@@ -98,6 +98,8 @@ header .container nav ul li {
     height: 20px;
     border: 1px solid beige;
     background-color: #f9f9f9;
+    cursor: pointer;
+    outline: none;
 }
 
 @media (min-width:635px) {
@@ -166,17 +168,12 @@ section {
     padding: 0 19px;
 }
 
-@media (min-width: 260px) {
-    hr {
-        width: 222px;
-        border: 1px solid #8a97a5;
-    }
-}
-
 h3 {
     text-align: center;
     color: #315a77;
     text-transform: uppercase;
+    font-size: 32px;
+    margin: 22px 0;
 }
 
 section#gallery {
@@ -476,15 +473,18 @@ input#submit-btn:hover {
     margin: 10px auto;
     text-align: center;
 }
-@media (max-width: 630px) {
+@media (max-width: 634px) {
 ul.nav-menu {
     flex-direction: column;
     list-style: none;
-    margin: 42px 0;
+    margin: 42px -18px;
     position: absolute;
+    width: 100%;
+    text-align: center;
 }
 .nav-menu li {
-    margin: 6px 0;
-    background-color: #cecece42;
+    margin: 5px 0;
+    background-color: #00000061;
+    padding: 6px 0px !important;
 }
 }
