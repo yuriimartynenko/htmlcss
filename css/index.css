@@ -126,7 +126,7 @@ header .container nav {
 a.bgallery {
     color: white;
     text-decoration: none;
-    background: #d4d4d429;
+    background: rgba(49, 90, 119, 0.45);
     width: 111px;
     height: 43px;
     border-radius: 28px;
@@ -140,7 +140,7 @@ a.bgallery {
 
 a.bgallery:hover {
     color: #e8e7e7;
-    background: #10101029;
+    background: rgba(49, 90, 119, 0);
     border: 1px solid #9c9c9c;
     transition-duration: 3s;
 }
@@ -246,17 +246,17 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Oxygen', sans-serif;
-    background-color: #23415f7d;
+    background-color: rgba(49, 90, 119, 0.56);
     padding: 8px 18px;
 }
 
 #gallery .container .nav ul li>a:hover {
-    background-color: #101c277d;
+    background-color: rgba(0, 0, 0, 0.05);
     transition-duration: 1s;
 }
 
 #gallery .container .nav {
-    background-color: #0000005e;
+    background-color: rgba(120, 163, 193, 0.2);
 }
 
 #gallery .container .nav ul {
